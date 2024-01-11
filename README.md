@@ -221,7 +221,7 @@ where `matlab` here is an alias for `/usr/local/MATLAB/R2018a/bin/matlab`
 3. Usage in a terminal:
 
 ```bash
-matlab path/to/script.m
+matlabrun path/to/script.m
 ```
 
 #### SPM12
