@@ -24,6 +24,7 @@ It has two main Volumes:
     - [How can I connect remotely?](#how-can-i-connect-remotely)
     - [I can't connect remotely](#i-cant-connect-remotely)
     - [How do I know if there is HD space on the computer?](#how-do-i-know-if-there-is-hd-space-on-the-computer)
+    - [RAM get full and my command is `killed`](#ram-get-full-and-my-command-is-killed)
     - [How do I know if someone else is using part or all the cpus/RAM?](#how-do-i-know-if-someone-else-is-using-part-or-all-the-cpusram)
     - [I run a command in remote and closed the connection and it seems that the command was quit](#i-run-a-command-in-remote-and-closed-the-connection-and-it-seems-that-the-command-was-quit)
     - [How do I exchange files from somewhere to the MONSTER and back (especially if working remotely)?](#how-do-i-exchange-files-from-somewhere-to-the-monster-and-back-especially-if-working-remotely)
@@ -94,6 +95,23 @@ tmpfs           6,3G  120K  6,3G   1% /run/user/1004
 tmpfs           6,3G  2,5M  6,3G   1% /run/user/1005
 tmpfs           6,3G   88K  6,3G   1% /run/user/127
 ```
+### RAM get full and my command is `killed`
+
+You may need to increase the swap memory. 
+
+To increase the swap memory see here https://askubuntu.com/questions/178712/how-to-increase-swap-space
+
+At the moemnt of this update is 200GB since we had problems with running layerification with upsampled data. The image is at `/media/fasthdd/swapfile.img`, to delete and rest the swap in a different way:
+
+```bash
+# swithc off the swap space
+sudo swapon /media/fasthdd/swapfile.img
+
+# delete the image
+sudo rm /media/fasthdd/swapfile.img
+
+# follow back the instructions at the link above
+```
 
 ### How do I know if someone else is using part or all the cpus/RAM?
 
@@ -110,6 +128,8 @@ Please use Datalad and GIN. _Why?_ Because it is easy for you to drop files and 
 ### Machine is stuck when switching user with blinking cursor
 
 use `Ctrl` + `Alt` + `F2`
+
+(not really working properly....)
 
 ## Specs
 
