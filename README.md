@@ -101,7 +101,7 @@ You may need to increase the swap memory.
 
 To increase the swap memory see here https://askubuntu.com/questions/178712/how-to-increase-swap-space
 
-At the moemnt of this update is 200GB since we had problems with running layerification with upsampled data. The image is at `/media/fasthdd/swapfile.img`, to delete and rest the swap in a different way:
+At the moemnt of this update is 200GB since we had problems with running layerification with upsampled data. The image is at `/media/fasthdd/swapfile.img`, to delete and reset the swap in a different way:
 
 ```bash
 # swithc off the swap space
@@ -112,6 +112,8 @@ sudo rm /media/fasthdd/swapfile.img
 
 # follow back the instructions at the link above
 ```
+
+NB: the swap memory is reset to 2GB at each reboot. It needs to reset to the actual `swapfile.img` back to serve as swap.
 
 ### How do I know if someone else is using part or all the cpus/RAM?
 
