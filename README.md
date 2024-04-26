@@ -72,6 +72,8 @@ Ask Marco
 
 Are you in the UCLouvain network or using a VPN to connect as-if you are within the UCLouvain network? Check [how to use UCLouvain VPN here](https://intranet.uclouvain.be/fr/myucl/services-informatiques/vpn.html) 
 
+Check whether IP address has changed via `ip route` on the monster. It should be the 3rd address printed.
+
 ### How do I know if there is HD space on the computer?
 
 run `df -h` on a terminal, volumes of interests are:
