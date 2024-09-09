@@ -115,7 +115,7 @@ sudo rm /mnt/HD_mercury/swapfile.img
 # follow back the instructions at the link above
 ```
 
-NB: the swap memory is reset to 2GB at each reboot. It needs to reset to the actual `swapfile.img` back to serve as swap.
+NB: the swap memory is should be set to 302GB at each reboot.
 
 ### How do I know if someone else is using part or all the cpus/RAM?
 
