@@ -103,14 +103,14 @@ You may need to increase the swap memory.
 
 To increase the swap memory see here https://askubuntu.com/questions/178712/how-to-increase-swap-space
 
-At the moemnt of this update is 200GB since we had problems with running layerification with upsampled data. The image is at `/media/fasthdd/swapfile.img`, to delete and reset the swap in a different way:
+At the moment of this update is 300GB (out of possible 1 TB?) since we had problems with running layerification with upsampled data. The image is at `/mnt/HD_mercury/swapfile.img`, to delete and reset the swap in a different way:
 
 ```bash
 # swithc off the swap space
-sudo swapon /media/fasthdd/swapfile.img
+sudo swapon /mnt/HD_mercury/swapfile.img
 
 # delete the image
-sudo rm /media/fasthdd/swapfile.img
+sudo rm /mnt/HD_mercury/swapfile.img
 
 # follow back the instructions at the link above
 ```
