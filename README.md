@@ -70,7 +70,7 @@ Ask Marco
 
 ### I can't connect remotely
 
-Are you in the UCLouvain network or using a VPN to connect as-if you are within the UCLouvain network? Check [how to use UCLouvain VPN here](https://intranet.uclouvain.be/fr/myucl/services-informatiques/vpn.html) 
+Are you in the UCLouvain network or using a VPN to connect as-if you are within the UCLouvain network? Check [how to use UCLouvain VPN here](https://uclouvain.atlassian.net/servicedesk/customer/article/564985915) 
 
 Check whether IP address has changed via `ip route` on the monster. It should be the 3rd address printed.
 
